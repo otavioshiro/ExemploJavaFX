@@ -1,5 +1,9 @@
 package model;
 
+import model.sqlite.VeiculoSQLiteDAO;
+
+import java.util.List;
+
 public class Veiculo {
 
     private Integer id;
@@ -56,5 +60,32 @@ public class Veiculo {
     public String toString(){
         return "Veiculo ("+marca+"\t"+modelo+"\t"+hp+")["+id+"]";
     }
+
+
+    //-------------------------------------- DAO
+
+    private static VeiculoSQLiteDAO dao = new VeiculoSQLiteDAO();
+
+    public void save(){
+
+        if(id != null && dao.find(id) != null)
+            dao.update(this);
+        else
+            dao.create(this);
+    }
+
+    public void delete(){
+        if(dao.find(id) != null)
+            dao.delete(this);
+    }
+
+    public static List<Veiculo> all(){
+        return dao.all();
+    }
+
+    public static Veiculo find(int pk){
+        return dao.find(pk);
+    }
+
 
 }

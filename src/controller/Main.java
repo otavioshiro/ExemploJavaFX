@@ -6,8 +6,8 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import model.Veiculo;
-import model.sqlite.VeiculoSQLite;
 
+import javax.xml.transform.sax.SAXSource;
 import java.util.ArrayList;
 
 public class Main extends Application {
@@ -20,17 +20,11 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
 
-        Veiculo v = new Veiculo("fiat","uno",60);
+        Veiculo v = new Veiculo(5,"ford","ranger",160);
 
-        VeiculoSQLite database = new VeiculoSQLite();
+        v.save();
 
-        //database.create(v);
-
-        database.update(new Veiculo(1,"VW","Brasilia",60));
-
-        System.out.println(database.find(1));
-
-        //System.out.println(database.all());
+        System.out.println(Veiculo.all());
 
         System.exit(0);
 

@@ -8,9 +8,9 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class VeiculoSQLite extends  SQLiteBase{
+public class VeiculoSQLiteDAO extends  SQLiteBase{
 
-    public VeiculoSQLite() {
+    public VeiculoSQLiteDAO() {
         open();
 
         try
