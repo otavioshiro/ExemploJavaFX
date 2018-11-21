@@ -16,7 +16,7 @@ public class VeiculoSQLite extends  SQLiteBase{
         try
         {
             PreparedStatement stm = conn.prepareStatement("CREATE TABLE IF NOT EXISTS Veiculos ("+
-                    "id INTEGER PRIMARY KEY AUTOINCREMENT,"+
+                    "_id INTEGER PRIMARY KEY AUTOINCREMENT,"+
                     "marca TEXT,"+
                     "modelo TEXT,"+
                     "hp INTEGER);");
@@ -58,7 +58,7 @@ public class VeiculoSQLite extends  SQLiteBase{
 
         try
         {
-            PreparedStatement stm = conn.prepareStatement("SELECT * FROM Veiculos ORDER BY id ASC;");
+            PreparedStatement stm = conn.prepareStatement("SELECT * FROM Veiculos ORDER BY _id ASC;");
 
             ResultSet rs = stm.executeQuery();
 
@@ -81,6 +81,68 @@ public class VeiculoSQLite extends  SQLiteBase{
 
         return result;
 
+    }
+
+    public void update(Veiculo v){
+        conn = open();
+
+        try {
+            PreparedStatement stm = conn.prepareStatement("UPDATE Veiculos SET "+
+                                                            "marca = ?"+
+                                                            "modelo = ?"+
+                                                            "hp = ?+" +
+                                                            " WHERE _id = ?;");
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+    }
+
+    public void delete(Veiculo v){
+        conn = open();
+
+        try
+        {
+            PreparedStatement stm = conn.prepareStatement("DELETE FROM Veiculos WHERE _id = ?;");
+
+            stm.setInt(1,v.get_id());
+
+        }catch (SQLException e){
+            e.printStackTrace();
+        }finally {
+            close();
+        }
+
+    }
+
+    public  Veiculo find(int pk){
+        Veiculo result = null;
+        conn = open();
+
+        try {
+            PreparedStatement stm = conn.prepareStatement("SELECT * FROM Veiculos WHERE _id = ?");
+
+            stm.setInt(1, pk);
+
+            ResultSet rs = stm.executeQuery();
+
+            if (rs.next()) {
+                Veiculo v = new Veiculo(
+                        rs.getString(2), //marca
+                        rs.getString(3), //modelo
+                        rs.getInt(4));//hp
+
+                result = v;
+
+            }
+
+        } catch(SQLException e){
+            e.printStackTrace();
+        }finally {
+            close();
+        }
+
+        return result;
     }
 
 }

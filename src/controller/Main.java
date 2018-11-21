@@ -24,9 +24,13 @@ public class Main extends Application {
 
         VeiculoSQLite database = new VeiculoSQLite();
 
-        database.create(v);
+        //database.create(v);
 
-        System.out.println(database.all());
+        database.update(new Veiculo(1,"VW","Brasilia",60));
+
+        System.out.println(database.find(1));
+
+        //System.out.println(database.all());
 
         System.exit(0);
 

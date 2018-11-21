@@ -20,6 +20,14 @@ public class Veiculo {
         this.hp = hp;
     }
 
+    public Integer get_id() {
+        return _id;
+    }
+
+    public void set_id(Integer _id) {
+        this._id = _id;
+    }
+
     public String getMarca() {
         return marca;
     }
