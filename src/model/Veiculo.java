@@ -2,7 +2,7 @@ package model;
 
 public class Veiculo {
 
-    private Integer _id;
+    private Integer id;
     private String marca;
     private String modelo;
     private int hp;
@@ -13,19 +13,19 @@ public class Veiculo {
         this.hp = hp;
     }
 
-    public Veiculo(int _id, String marca, String modelo, int hp) {
-        this._id = _id;
+    public Veiculo(int id, String marca, String modelo, int hp) {
+        this.id = id;
         this.marca = marca;
         this.modelo = modelo;
         this.hp = hp;
     }
 
-    public Integer get_id() {
-        return _id;
+    public Integer getid() {
+        return id;
     }
 
-    public void set_id(Integer _id) {
-        this._id = _id;
+    public void set_id(Integer id) {
+        this.id = id;
     }
 
     public String getMarca() {
@@ -54,7 +54,7 @@ public class Veiculo {
 
     @Override
     public String toString(){
-        return "Veiculo ("+marca+"\t"+modelo+"\t"+hp+")["+_id+"]";
+        return "Veiculo ("+marca+"\t"+modelo+"\t"+hp+")["+id+"]";
     }
 
 }

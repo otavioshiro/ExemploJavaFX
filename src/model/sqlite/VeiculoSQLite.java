@@ -16,7 +16,7 @@ public class VeiculoSQLite extends  SQLiteBase{
         try
         {
             PreparedStatement stm = conn.prepareStatement("CREATE TABLE IF NOT EXISTS Veiculos ("+
-                    "_id INTEGER PRIMARY KEY AUTOINCREMENT,"+
+                    "id INTEGER PRIMARY KEY AUTOINCREMENT,"+
                     "marca TEXT,"+
                     "modelo TEXT,"+
                     "hp INTEGER);");
@@ -58,7 +58,7 @@ public class VeiculoSQLite extends  SQLiteBase{
 
         try
         {
-            PreparedStatement stm = conn.prepareStatement("SELECT * FROM Veiculos ORDER BY _id ASC;");
+            PreparedStatement stm = conn.prepareStatement("SELECT * FROM Veiculos ORDER BY id ASC;");
 
             ResultSet rs = stm.executeQuery();
 
@@ -87,26 +87,36 @@ public class VeiculoSQLite extends  SQLiteBase{
         conn = open();
 
         try {
-            PreparedStatement stm = conn.prepareStatement("UPDATE Veiculos SET "+
-                                                            "marca = ?"+
-                                                            "modelo = ?"+
-                                                            "hp = ?+" +
-                                                            " WHERE _id = ?;");
+            PreparedStatement stm = conn.
+                    prepareStatement("UPDATE Veiculos SET "+
+                                        "marca = ?,"+
+                                        "modelo = ?,"+
+                                        "hp = ?" +
+                                        " WHERE id = ?;");
+
+            stm.setString(1,v.getMarca());
+            stm.setString(2,v.getModelo());
+            stm.setInt(3,v.getHp());
+            stm.setInt(4,v.getid());
+
+            stm.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();
+        }finally {
+            close();
         }
-
     }
 
     public void delete(Veiculo v){
         conn = open();
 
-        try
-        {
-            PreparedStatement stm = conn.prepareStatement("DELETE FROM Veiculos WHERE _id = ?;");
+        try{
+            PreparedStatement stm = conn.
+                    prepareStatement("DELETE FROM Veiculos WHERE id = ?;");
 
-            stm.setInt(1,v.get_id());
+            stm.setInt(1,v.getid());
 
+            stm.executeUpdate();
         }catch (SQLException e){
             e.printStackTrace();
         }finally {
@@ -120,7 +130,8 @@ public class VeiculoSQLite extends  SQLiteBase{
         conn = open();
 
         try {
-            PreparedStatement stm = conn.prepareStatement("SELECT * FROM Veiculos WHERE _id = ?");
+            PreparedStatement stm = conn.
+                    prepareStatement("SELECT * FROM Veiculos WHERE id = ?;");
 
             stm.setInt(1, pk);
 
@@ -133,7 +144,6 @@ public class VeiculoSQLite extends  SQLiteBase{
                         rs.getInt(4));//hp
 
                 result = v;
-
             }
 
         } catch(SQLException e){

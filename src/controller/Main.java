@@ -20,7 +20,7 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
 
-        Veiculo v = new Veiculo("VVW","Brasilia",60);
+        Veiculo v = new Veiculo("fiat","uno",60);
 
         VeiculoSQLite database = new VeiculoSQLite();
 
