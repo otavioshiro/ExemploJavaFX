@@ -20,14 +20,6 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
 
-        Veiculo v = new Veiculo(5,"ford","ranger",160);
-
-        v.save();
-
-        System.out.println(Veiculo.all());
-
-        System.exit(0);
-
         stage = primaryStage;
 
         primaryStage.setTitle("Exemplo FX");
