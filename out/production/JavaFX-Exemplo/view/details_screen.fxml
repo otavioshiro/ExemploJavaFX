@@ -16,7 +16,7 @@
     <bottom>
         <ToolBar nodeOrientation="RIGHT_TO_LEFT" prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
             <items>
-                <Button layoutX="10.0" layoutY="13.0" mnemonicParsing="false" prefWidth="100.0" text="OK" />
+                <Button layoutX="10.0" layoutY="13.0" mnemonicParsing="false" onAction="#btOKAction" prefWidth="100.0" text="OK" />
                 <Button mnemonicParsing="false" onAction="#btCancelarAction" prefWidth="100.0" text="Cancelar" />
             </items>
         </ToolBar>

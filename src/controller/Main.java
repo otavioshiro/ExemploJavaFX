@@ -24,10 +24,10 @@ public class Main extends Application {
 
         primaryStage.setTitle("Exemplo FX");
 
-        Parent fxmlMain = FXMLLoader.load(getClass().getResource("../view/main_screen.fxml"));
+        Parent fxmlMain = FXMLLoader.load(getClass().getResource("/view/main_screen.fxml"));
         mainScene = new Scene(fxmlMain, 640, 400);
 
-        Parent fxmlDetails = FXMLLoader.load(getClass().getResource("../view/details_screen.fxml"));
+        Parent fxmlDetails = FXMLLoader.load(getClass().getResource("/view/details_screen.fxml"));
         detailsScene = new Scene(fxmlDetails, 640, 400);
 
         primaryStage.setScene(mainScene);
