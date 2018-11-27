@@ -1,18 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="JavaFX-Exemplo" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Até aula 18 - funcionando 100%">
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Até aula 22 - funcionando 100%, falta gerar build">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my_database" beforeDir="false" afterPath="$PROJECT_DIR$/my_database" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaFX-Exemplo/controller/DetailsController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaFX-Exemplo/controller/DetailsController$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaFX-Exemplo/controller/DetailsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaFX-Exemplo/controller/DetailsController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaFX-Exemplo/controller/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaFX-Exemplo/controller/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaFX-Exemplo/controller/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaFX-Exemplo/controller/MainController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaFX-Exemplo/view/details_screen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaFX-Exemplo/view/details_screen.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/DetailsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/DetailsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/main_screen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/main_screen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaFX-Exemplo/view/main_screen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaFX-Exemplo/view/main_screen.fxml" afterDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -86,8 +82,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/controller/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="33" column="28" lean-forward="true" selection-start-line="33" selection-start-column="28" selection-end-line="33" selection-end-column="28" />
+            <state relative-caret-position="510">
+              <caret line="39" column="42" selection-start-line="39" selection-start-column="42" selection-end-line="39" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -98,7 +94,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/model/sqlite/VeiculoSQLiteDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
+            <state relative-caret-position="323">
               <caret line="19" column="34" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -110,12 +106,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/controller/MainController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="148">
+            <state relative-caret-position="612">
               <caret line="37" column="35" selection-start-line="37" selection-start-column="35" selection-end-line="37" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#705#706#0" expanded="true" />
-                <element signature="e#779#780#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -124,10 +118,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/controller/DetailsController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="282">
+            <state relative-caret-position="1275">
               <caret line="75" selection-start-line="75" selection-end-line="75" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1277#1278#0" expanded="true" />
                 <element signature="e#1318#1319#0" expanded="true" />
               </folding>
             </state>
@@ -137,8 +132,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/model/Veiculo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="444">
-              <caret line="69" lean-forward="true" selection-start-line="69" selection-end-line="69" />
+            <state relative-caret-position="867">
+              <caret line="69" selection-start-line="69" selection-end-line="69" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -184,7 +179,7 @@
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="839" />
     <option name="y" value="7" />
     <option name="width" value="1073" />
@@ -259,7 +254,7 @@
     <property name="OverrideImplement.combined" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543264275222" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543280973048" />
     <property name="dynamic.classpath" value="false" />
     <property name="last_opened_file_path" value="C:/Program Files (x86)/Oracle/JavaFX Scene Builder 2.0/JavaFX Scene Builder 2.0.exe" />
     <property name="project.structure.last.edited" value="Artifacts" />
@@ -382,7 +377,8 @@
       <workItem from="1542982649310" duration="645000" />
       <workItem from="1542984817664" duration="38000" />
       <workItem from="1542984883947" duration="7095000" />
-      <workItem from="1543242773911" duration="7836000" />
+      <workItem from="1543242773911" duration="8524000" />
+      <workItem from="1543281398855" duration="395000" />
     </task>
     <task id="LOCAL-00001" summary="Criado BD">
       <created>1542052721523</created>
@@ -419,14 +415,21 @@
       <option name="project" value="LOCAL" />
       <updated>1543004532157</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Até aula 22 - funcionando 100%, falta gerar build">
+      <created>1543264382564</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1543264382565</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61302000" />
+    <option name="totallyTimeSpent" value="62385000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="839" y="7" width="1073" height="1047" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" weight="0.3118162" />
@@ -450,7 +453,7 @@
       <window_info anchor="bottom" id="Changes" order="10" />
       <window_info anchor="bottom" id="Profiler" order="11" />
       <window_info anchor="bottom" id="Event Log" order="12" weight="0.32936078" />
-      <window_info active="true" anchor="bottom" id="Messages" order="13" visible="true" weight="0.3249453" />
+      <window_info active="true" anchor="bottom" id="Messages" order="13" visible="true" weight="0.32394367" />
       <window_info anchor="bottom" id="Database Changes" order="14" />
       <window_info anchor="bottom" id="Terminal" order="15" weight="0.32936078" />
       <window_info anchor="bottom" id="Inspection Results" order="16" weight="0.32822758" />
@@ -489,7 +492,8 @@
     <MESSAGE value="Até aula 15 - retorno problema: null" />
     <MESSAGE value="Até aula 16 - funcionando 100%" />
     <MESSAGE value="Até aula 18 - funcionando 100%" />
-    <option name="LAST_COMMIT_MESSAGE" value="Até aula 18 - funcionando 100%" />
+    <MESSAGE value="Até aula 22 - funcionando 100%, falta gerar build" />
+    <option name="LAST_COMMIT_MESSAGE" value="Até aula 22 - funcionando 100%, falta gerar build" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -536,20 +540,20 @@
       </provider>
       <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/sqlite/VeiculoSQLiteDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/controller/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="19" column="34" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
+        <state relative-caret-position="510">
+          <caret line="39" column="42" selection-start-line="39" selection-start-column="42" selection-end-line="39" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/Veiculo.java">
+    <entry file="file://$PROJECT_DIR$/src/model/sqlite/VeiculoSQLiteDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
-          <caret line="69" lean-forward="true" selection-start-line="69" selection-end-line="69" />
+        <state relative-caret-position="323">
+          <caret line="19" column="34" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -558,31 +562,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/controller/MainController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
+        <state relative-caret-position="612">
           <caret line="37" column="35" selection-start-line="37" selection-start-column="35" selection-end-line="37" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#705#706#0" expanded="true" />
-            <element signature="e#779#780#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/controller/DetailsController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
+        <state relative-caret-position="1275">
           <caret line="75" selection-start-line="75" selection-end-line="75" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1277#1278#0" expanded="true" />
             <element signature="e#1318#1319#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/model/Veiculo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="33" column="28" lean-forward="true" selection-start-line="33" selection-start-column="28" selection-end-line="33" selection-end-column="28" />
+        <state relative-caret-position="867">
+          <caret line="69" selection-start-line="69" selection-end-line="69" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
